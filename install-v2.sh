@@ -13,7 +13,7 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © SKYZOPEDIA                [+]${NC}"
+  echo -e "${BLUE}[+]                  © JACKDOGLE                    [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
@@ -21,9 +21,9 @@ display_welcome() {
   echo -e "Dilarang Keras Share Bebas."
   echo -e ""
   echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
-  echo -e "@skyzodev"
+  echo -e "@doglestoreofficial"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@skyzopedia"
+  echo -e "@JACKDOGLE"
   sleep 4
   clear
 }
@@ -62,14 +62,14 @@ check_token() {
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "skyzodev" ]; then
+  if [ "$USER_TOKEN" = "jackdogle" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Token Salah! Beli Kode Token Di Skyzopedia${NC}"
-    echo -e "${YELLOW}TELEGRAM : @skyzodev${NC}"
-    echo -e "${YELLOW}WHATSAPP : +6285624297893${NC}"
+    echo -e "${YELLOW}TELEGRAM : @doglestoreofficial${NC}"
+    echo -e "${YELLOW}WHATSAPP : +6287716917793${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}© Skyzopedia${NC}"
+    echo -e "${YELLOW}© JACKDOGLE${NC}"
     exit 1
   fi
   clear
@@ -112,7 +112,7 @@ install_theme() {
       ;;
   esac
 
-  THEME_URL="https://github.com/SkyzoOffc/Pterodactyl-Theme-Autoinstaller/raw/main/${THEME_NAME}.zip"
+  THEME_URL="https://github.com/jackdogle/Pterodactyl-Theme-Autoinstaller/raw/main/${THEME_NAME}.zip"
 
   echo -e "${YELLOW}Mengunduh theme $THEME_NAME...${NC}"
   wget -q -O "/root/${THEME_NAME}.zip" "$THEME_URL"
@@ -140,7 +140,7 @@ install_theme() {
   echo -e "${YELLOW}Menginstall dependensi dan apply theme...${NC}"
   sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
 
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+  curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
   sudo apt install -y nodejs
   sudo npm install -g yarn
 
@@ -188,7 +188,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/stellar.zip https://github.com/SkyzoOffc/Pterodactyl-Theme-Autoinstaller/raw/main/stellar.zip
+wget -O /root/stellar.zip https://github.com/jackdogle/Pterodactyl-Theme-Autoinstaller/raw/main/stellar.zip
 
 
 # Ekstrak file tema
@@ -198,7 +198,7 @@ unzip /root/stellar.zip -d /root/pterodactyl
 sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
 
 # Instal Node.js dan Yarn
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm i -g yarn
 
